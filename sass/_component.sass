@@ -1,0 +1,95 @@
+.flex-container
+    text-align: center
+    padding: 75px 20px 60px 20px
+    .content
+        &__tittle
+            font-size: 22px
+            line-height: 130%
+        &__description
+            font-size: 12px
+            line-height: 165%
+            margin: 25px 25px 40px 25px
+    .boxes
+        &__cost
+            background-color: hsl(248, 32%, 49%)
+            border-radius: 10px
+            box-shadow: 0px 8px 3px -1px rgba(74, 74, 78, 0.250)
+            p
+                font-size: 12px
+                padding: 13px 60px
+                letter-spacing: .01rem
+                line-height: 165%
+                span
+                    font-weight: 700
+        &__form
+            margin-top: 20px
+            padding: 17px
+            background-color: #fff
+            border-radius: 10px
+            box-shadow: 0px 8px 3px -1px rgba(74, 74, 78, 0.250)
+            *
+                margin-top: 15px
+            &__first
+                margin-top: 0
+            input
+                width: 100%
+                font-size: 11px
+                padding: 14px
+                border: 1px solid rgba(150, 150, 150, .4)
+                border-radius: 5px
+            ::placeholder
+                font-weight: 600
+            &__btn
+                width: 100%
+                padding: 14px
+                font-family: 'Poppins', sans-serif
+                font-size: 12px
+                text-transform: uppercase
+                font-weight: 500
+                letter-spacing: .09em
+                border: none
+                border-radius: 5px
+                background-color: hsl(154, 59%, 51%)
+                color: white
+                box-shadow: 0px 6px 3px -1px hsla(154, 59%, 51%, 0.500)
+            &__info
+                color: hsl(246, 25%, 77%)
+                font-size: 8px
+                margin: 15px 17px 0 17px
+                font-weight: 500
+                line-height: 200%
+                &--red
+                    color: hsl(0, 100%, 74%)
+                    font-weight: 700
+
+@media screen and (min-width: 360px)
+    .flex-container
+        padding: 75px 30px 60px 30px
+        .content
+            &__tittle
+                font-size: 23px
+                padding: 0 20px
+            &__description
+                margin: 25px 30px 35px 30px
+        .boxes
+            &__form
+                &__info
+                    font-size: 9px
+
+@media screen and (min-width: 390px)
+    .flex-container
+        padding: 90px 35px 60px 35px
+        .content
+            &__tittle
+                font-size: 28px
+            &__description
+                font-size: 13px
+                margin: 25px 40px 45px 40px
+        .boxes
+            &__form
+                &__info
+                    font-size: 10px
+
+@media screen and (min-width: 412px)
+    .flex-container
+        padding: 105px 35px 60px 35px
