@@ -1,6 +1,8 @@
 .flex-container
     text-align: center
     padding: 75px 20px 60px 20px
+    max-width: 450px
+    margin: 0 auto
     .content
         &__tittle
             font-size: 22px
@@ -12,11 +14,11 @@
     .boxes
         &__cost
             background-color: hsl(248, 32%, 49%)
-            border-radius: 10px
+            border-radius: 5px
             box-shadow: 0px 8px 3px -1px rgba(74, 74, 78, 0.250)
             p
                 font-size: 12px
-                padding: 13px 60px
+                padding: 13px 50px
                 letter-spacing: .01rem
                 line-height: 165%
                 span
@@ -37,6 +39,7 @@
                 padding: 14px
                 border: 1px solid rgba(150, 150, 150, .4)
                 border-radius: 5px
+                outline: none
             ::placeholder
                 font-weight: 600
             &__btn
@@ -93,3 +96,132 @@
 @media screen and (min-width: 412px)
     .flex-container
         padding: 105px 35px 60px 35px
+
+@media screen and (min-width: 601px)
+    .container
+        &::before
+            background-image: url(../images/bg-intro-desktop.png)
+
+@media screen and (min-width: 601px) and (orientation: portrait)
+    .container
+        padding: 0
+        .flex-container
+            padding: 0
+            height: 100vh
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            .content
+                &__tittle
+                    font-size: 38px
+                &__description
+                    font-size: 15px
+            .boxes
+                &__cost
+                    p
+                        font-size: 13px
+                        padding: 15px 60px
+                &__form
+                    padding: 20px
+                    input
+                        font-size: 12px
+                    &__btn
+                        font-size: 13px
+                    &__info
+                        font-size: 11px
+
+@media screen and (min-width: 768px) and (orientation: portrait)
+    .container
+        .flex-container
+            .content
+                &__tittle
+                    font-size: 40px
+
+@media screen and (min-width: 768px) and (orientation: landscape)
+    .container
+        display: flex
+        justify-content: center
+        align-items: center
+        .flex-container
+            max-width: 900px
+            padding: 0 40px
+            display: flex
+            flex-direction: row
+            justify-content: center
+            align-items: center
+            .content
+                text-align: left
+                padding-right: 50px
+                &__tittle
+                    padding: 0
+                    font-size: 33px
+                    line-height: 110%
+                &__description
+                    margin: 15px 0 0 0
+                    font-size: 11px
+            .boxes
+                &__cost
+                    p
+                        font-size: 10px
+                &__form
+                    margin-top: 15px
+                    input
+                        font-size: 10px
+                    &__btn
+                        font-size: 10px
+                    &__info
+                        font-size: 7px
+                        margin: 10px 17px 0 17px
+
+@media screen and (min-width: 1280px) and (orientation: landscape)
+    .container
+        .flex-container
+            .content
+                &__tittle
+                    font-size: 34px
+                &__description
+                    margin: 20px 0 0 0
+                    font-size: 12px
+
+@media screen and (min-width: 1440px) and (orientation: landscape)
+    .container
+        .flex-container
+            max-width: 1000px
+            .content
+                &__tittle
+                    font-size: 42px
+                &__description
+                    font-size: 16px
+            .boxes
+                &__cost
+                    p
+                        font-size: 12px
+                &__form
+                    input
+                        font-size: 11px
+                    &__btn
+                        font-size: 12px
+                    &__info
+                        font-size: 9px
+
+@media screen and (min-width: 1920px) and (orientation: landscape)
+    .container
+        .flex-container
+            max-width: 1200px
+            .content
+                &__tittle
+                    font-size: 49px
+                &__description
+                    font-size: 17px
+            .boxes
+                &__cost
+                    p
+                        font-size: 14px
+                &__form
+                    input
+                        font-size: 13px
+                    &__btn
+                        font-size: 14px
+                    &__info
+                        font-size: 11px
