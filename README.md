@@ -15,4 +15,7 @@ Users should be able to:
 ### Built with
 
 - Semantic HTML5 markup
+- SASS
+- BEM
+- Javascript
 - Mobile-first workflow
