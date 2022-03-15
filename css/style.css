@@ -50,7 +50,7 @@ html, body {
 
 .flex-container .boxes__cost {
   background-color: #6055a5;
-  border-radius: 5px;
+  border-radius: 7px;
   -webkit-box-shadow: 0px 8px 3px -1px rgba(74, 74, 78, 0.25);
           box-shadow: 0px 8px 3px -1px rgba(74, 74, 78, 0.25);
 }
@@ -115,7 +115,7 @@ html, body {
   color: #ff7a7a;
   font-size: 8px;
   font-weight: 500;
-  margin: 5px 0 -5px 0;
+  margin: 5px 0 -3px 0;
   text-align: right;
   display: none;
 }
@@ -177,7 +177,7 @@ html, body {
     padding: 75px 30px 60px 30px;
   }
   .flex-container .content__tittle {
-    font-size: 23px;
+    font-size: 24px;
     padding: 0 20px;
   }
   .flex-container .content__description {
@@ -193,7 +193,7 @@ html, body {
     padding: 90px 35px 60px 35px;
   }
   .flex-container .content__tittle {
-    font-size: 28px;
+    font-size: 27px;
   }
   .flex-container .content__description {
     font-size: 13px;
@@ -202,11 +202,17 @@ html, body {
   .flex-container .boxes__form__info {
     font-size: 10px;
   }
+  .flex-container .boxes__form .error-info, .flex-container .boxes__form p.error-info-email {
+    font-size: 9px;
+  }
 }
 
 @media screen and (min-width: 412px) {
   .flex-container {
     padding: 105px 35px 60px 35px;
+  }
+  .flex-container .content__tittle {
+    font-size: 28px;
   }
 }
 
@@ -259,11 +265,30 @@ html, body {
   .container .flex-container .boxes__form__info {
     font-size: 11px;
   }
+  .container .flex-container .boxes__form .error-info, .container .flex-container .boxes__form p.error-info-email {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
   .container .flex-container .content__tittle {
-    font-size: 40px;
+    font-size: 43px;
+  }
+  .container .flex-container .content__description {
+    font-size: 16px;
+  }
+  .container .flex-container .boxes__form {
+    padding: 25px;
+  }
+  .container .flex-container .boxes__form input {
+    font-size: 13px;
+  }
+  .container .flex-container .boxes__form__btn {
+    font-size: 14px;
+  }
+  .container .flex-container .boxes__form__info {
+    font-size: 12px;
   }
 }
 
@@ -281,7 +306,7 @@ html, body {
   }
   .container .flex-container {
     max-width: 900px;
-    padding: 0 40px;
+    padding: 0 50px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -289,9 +314,9 @@ html, body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -314,39 +339,60 @@ html, body {
         flex-basis: 100%;
   }
   .container .flex-container .boxes__cost p {
-    font-size: 10px;
+    font-size: 10.5px;
   }
   .container .flex-container .boxes__form {
     margin-top: 15px;
+    padding: 15px 25px 25px 25px;
+  }
+  .container .flex-container .boxes__form * {
+    margin-top: 14px;
+  }
+  .container .flex-container .boxes__form p.error-info, .container .flex-container .boxes__form p.error-info-email {
+    margin-top: 5px;
   }
   .container .flex-container .boxes__form input {
-    font-size: 10px;
+    font-size: 10.5px;
   }
   .container .flex-container .boxes__form__btn {
-    font-size: 10px;
+    font-size: 10.5px;
   }
   .container .flex-container .boxes__form__info {
-    font-size: 7px;
+    font-size: 8px;
     margin: 10px 17px 0 17px;
   }
 }
 
 @media screen and (min-width: 1280px) and (orientation: landscape) {
+  .container .flex-container {
+    max-width: 1200px;
+    padding: 0 120px;
+  }
   .container .flex-container .content__tittle {
-    font-size: 34px;
+    font-size: 40px;
   }
   .container .flex-container .content__description {
     margin: 20px 0 0 0;
+    font-size: 14px;
+  }
+  .container .flex-container .boxes__cost p {
     font-size: 12px;
+  }
+  .container .flex-container .boxes__form input {
+    font-size: 12px;
+  }
+  .container .flex-container .boxes__form__btn {
+    font-size: 13px;
+  }
+  .container .flex-container .boxes__form__info {
+    font-size: 10px;
+    margin: 10px 17px 0 17px;
   }
 }
 
 @media screen and (min-width: 1440px) and (orientation: landscape) {
-  .container .flex-container {
-    max-width: 1000px;
-  }
   .container .flex-container .content__tittle {
-    font-size: 42px;
+    font-size: 43px;
   }
   .container .flex-container .content__description {
     font-size: 16px;
@@ -355,10 +401,10 @@ html, body {
     font-size: 12px;
   }
   .container .flex-container .boxes__form input {
-    font-size: 11px;
+    font-size: 12px;
   }
   .container .flex-container .boxes__form__btn {
-    font-size: 12px;
+    font-size: 13px;
   }
   .container .flex-container .boxes__form__info {
     font-size: 9px;
@@ -368,6 +414,7 @@ html, body {
 @media screen and (min-width: 1920px) and (orientation: landscape) {
   .container .flex-container {
     max-width: 1200px;
+    padding: 0 100px;
   }
   .container .flex-container .content__tittle {
     font-size: 49px;
@@ -386,6 +433,9 @@ html, body {
   }
   .container .flex-container .boxes__form__info {
     font-size: 11px;
+  }
+  .container .flex-container .boxes .error-info, .container .flex-container .boxes p.error-info-email {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
