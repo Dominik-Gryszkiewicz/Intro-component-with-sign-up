@@ -22,16 +22,22 @@
                 <div class="boxes__cost">
                     <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
                 </div>
-                <form action="#" class="boxes__form">
+                <form class="boxes__form">
                     <input type="text" placeholder="First Name" class="boxes__form__first">
+                    <p class="error-info">First Name cannot be empty</p>
                     <input type="text" placeholder="Last Name" class="boxes__form__last">
+                    <p class="error-info">Last Name cannot be empty</p>
                     <input type="email" placeholder="Email Address" class="boxes__form__mail">
+                    <p class="error-info">Email Address cannot be empty</p>
+                    <p class="error-info-email">Looks like this is not an email</p>
                     <input type="password" placeholder="Password" class="boxes__form__password">
+                    <p class="error-info">Password cannot be empty</p>
                     <button class="boxes__form__btn">Claim your free trial</button>
                     <p class="boxes__form__info">By clicking the button, you are agreeing to our <span class="boxes__form__info--red">Terms and Services</span></p>
                 </form>
             </section>
         </main>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
